@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Website</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href = "css/styles.css" rel = "stylesheet">
+
+<style type="text/css">
+	
+
+#appleLogo{
+	float: left;
+	padding-top: 10px;
+	margin-left: 270px;
+
+}
+.navbar-nav li{
+	padding-right: 15px;
+	padding-left:15px;
+}
+#jumbo1 {
+	background-color: #161616;
+	color: white;
+	padding-top: 70px;
+}
+#jumbo2 {
+	background-color: white;
+	color: black;
+	
+}
+#coronaWarning{
+	padding-bottom: 10px;
+	color: white;
+	background-color:#0958d9;
+	padding-top: 10px;
+	float: left;
+	width: 100%;
+
+}
+#coronaWarning: active {
+	color: white;
+}
+#buyText{
+	font-size: 25px;
+}
+#buyText: visited{
+	color: blue;
+}
+#buyText: hover{
+	color: blue;
+	text-decoration: underline;
+}
+#buyText: visited{
+	color: blue;
+}
+body{
+	margin-bottom: 50px;
+}
+.pic1{
+	float: left;
+	margin-bottom: 50px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+	<div class = "navbar navbar-inverse navbar-static-top">
+		<div class="container">
+				<a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1200px-Apple_logo_grey.svg.png" width="20px" id="appleLogo"></a>
+				<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#"></a></li>
+						<li><a href="blog.html">Articles</a></li>
+						<li class="dropdown">
+
+
+							<a href="#" class="dropdown-toggle" data-toggle= "dropdown" >Social Media </a>
+							<ul class="dropdown-menu">
+								<li><a href="https://twitter.com/apple?lang=en">Twitter</a></li>
+								<li><a href="https://www.facebook.com/apple/">Facebook</a></li>
+								<li><a href="https://www.instagram.com/apple/?hl=en">Instagram</a></li>
+
+							</ul>
+
+
+						</li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<div>
+		<center><a id="coronaWarning" href="https://covid19.apple.com/screening/">Evaluate COVID-19 symptoms and understand next steps ></a></center>
+
+	</div>
+<!--	<div class="container">
+		<div class="alert alert-danger alert-dismissable">
+			<button type="button" class="close" data-dismiss ="alert">&times;</button>
+			 By closing this alert, you consent that this is the best website.
+		</div>
+	</div> -->
+		<div class="jumbotron" id="jumbo1">
+			<center><h1>iPhone SE</h1>
+			<p>Lots to love. Less to spend. <br> Starting at $399.</p>
+			<a class="btn" id="buyText" href="https:apple.com/shop/buy-iphone/iphone-se" id="iphoneSE">Buy now ﹥</a>
+			<br>
+			<img src="https://www.apple.com/v/iphone-se/c/images/meta/og__eop0rb3mevma_overview.png">
+
+			</center>
+		</div>
+		<div class="jumbotron" id="jumbo2">
+			<center><h1>iPhone 11</h1>
+			<p>Just the right amount of everything. <br> From $19.95 per month or $479 with trade in.</p>
+			<a class="btn" id="buyText" href="https://www.apple.com/shop/buy-iphone/iphone-11">Buy now ﹥</a>
+			<br>
+			<img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_LP_hero.jpg.og.jpg?202007102211">
+
+			</center>
+		</div>
+		<div>
+			<div>
+				<a href="https://www.apple.com/apple-arcade/"><img src="https://9to5mac.com/wp-content/uploads/sites/6/2020/02/Apple-Arcade.png" width="759" class="pic1 btn"></a>
+			</div>
+				<a href="https://www.apple.com/apple-tv-plus/"><img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/12/apple-tv-plus.jpg?quality=82&strip=all" width=" 759" class="pic1 btn"></a>
+			<div>
+				
+			</div>
+
+
+		</div>
+	</div>
+	<div class = "navbar navbar-default navbar-fixed-bottom" id="bottomBar">
+		<div class="container">
+			<p class="navbar-text oull-left">Site built by Vinay Narayanan</p>
+			<a class="navbar-btn btn-danger btn pull-right" href="https://www.apple.com/">Official Apple Website</a>
+		</div>
+		
+	</div>
+	
+	<div class="modal fade" id="contact" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal">
+					<div class="modal-header">
+						<h4>Contact Tech Site</h4>
+					</div>
+					<div class="modal-body">
+					
+						<div class="form-group">
+							
+							<label for="contact-name" class="col-lg-2 control-label">Name:</label>
+							<div class="col-lg-10">
+								
+								<input type="text" class = "form-control" id = "contact-name" placeholder="Full Name">
+
+							</div>
+
+						</div>
+						<div class="form-group">
+							
+							<label for="contact-email" class="col-lg-2 control-label">Email:</label>
+							<div class="col-lg-10">
+								
+								<input type="text" class = "form-control" id = "contact-email" placeholder="you@example.com">
+
+							</div>
+
+						</div>
+						<div class="form-group">
+							
+							<label for="contact-message" class="col-lg-2 control-label">Message:</label>
+							<div class="col-lg-10">
+								
+								<textarea class="form-control" rows = "8" placeholder="type your message here"></textarea>
+
+							</div>
+
+						</div>	
+
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<button class="btn btn-primary" type="btn-submit">Send</button>
+
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
