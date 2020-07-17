@@ -14,36 +14,41 @@
 #appleLogo{
 	float: left;
 	padding-top: 10px;
-	margin-left: 10%;
+	margin-left: 24%;
 
 }
 .navbar-nav li{
 	padding-right: 15px;
 	padding-left:15px;
 }
+
 #jumbo1 {
+	padding-top: 100px;
 	background-color: #161616;
 	color: white;
-	padding-top: 70px;
 }
 #jumbo2 {
 	background-color: white;
 	color: black;
 }
 	
-}
+
 #coronaWarning{
 	padding-bottom: 10px;
-	color: white;
 	background-color:#0958d9;
 	padding-top: 10px;
 	float: left;
 	width: 100%;
-
+	margin-top: 0;
 }
-#coronaWarning: active {
+#coronaWarning a{
+	padding-bottom: 10px;
 	color: white;
+	padding-top: 10px;
+	float: left;
+	width: 100%;
 }
+
 #buyText{
 	font-size: 25px;
 }
@@ -63,6 +68,9 @@ body{
 .pic1{
 	float: left;
 	width:100%;
+}
+#iphoneSE{
+	color: blue;
 }
 
 
@@ -108,8 +116,8 @@ body{
 		</div>
 	
 	</div>
-	<div>
-		<center><a id="coronaWarning" href="https://covid19.apple.com/screening/">Evaluate COVID-19 symptoms and understand next steps ></a></center>
+	<div id="coronaWarning">
+		<center><a href="https://covid19.apple.com/screening/">Evaluate COVID-19 symptoms and understand next steps ></a></center>
 
 	</div>
 <!--	<div class="container">
@@ -121,9 +129,9 @@ body{
 		<div class="jumbotron" id="jumbo1">
 			<center><h1>iPhone SE</h1>
 			<p>Lots to love. Less to spend. <br> Starting at $399.</p>
-			<a class="btn" id="buyText" href="https:apple.com/shop/buy-iphone/iphone-se" id="iphoneSE">Buy now ﹥</a>
+			<a class="btn" id="buyText" href="https://apple.com/shop/buy-iphone/iphone-se" id="iphoneSE">Buy now ﹥</a>
 			<br>
-			<img src="https://www.apple.com/v/iphone-se/c/images/meta/og__eop0rb3mevma_overview.png" class="img-responsive">
+			<a class="btn" id="buyText" href="https://apple.com/shop/buy-iphone/iphone-se"><img src="https://www.apple.com/v/iphone-se/c/images/meta/og__eop0rb3mevma_overview.png" class="img-responsive"></a>
 
 			</center>
 		</div>
@@ -132,7 +140,7 @@ body{
 			<p>Just the right amount of everything. <br> From $19.95 per month or $479 with trade in.</p>
 			<a class="btn" id="buyText" href="https://www.apple.com/shop/buy-iphone/iphone-11">Buy now ﹥</a>
 			<br>
-			<img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_LP_hero.jpg.og.jpg?202007102211" class="img-responsive">
+			<a class="btn" id="buyText" href="https://www.apple.com/shop/buy-iphone/iphone-11"><img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_LP_hero.jpg.og.jpg?202007102211" class="img-responsive"></a>
 
 			</center>
 		</div>
@@ -159,12 +167,12 @@ body{
 	<div class="modal fade" id="contact" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form class="form-horizontal">
+				<form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-horizontal">
 					<div class="modal-header">
 						<h4>Contact Tech Site</h4>
 					</div>
 					<div class="modal-body">
-					
+						
 						<div class="form-group">
 							
 							<label for="contact-name" class="col-lg-2 control-label">Name:</label>
@@ -202,6 +210,7 @@ body{
 						<button class="btn btn-primary" type="btn-submit">Send</button>
 
 					</div>
+					<input type="submit" value="Send">
 				</form>
 			</div>
 
